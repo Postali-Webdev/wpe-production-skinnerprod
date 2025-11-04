@@ -1,0 +1,54 @@
+/**
+ * Web Font Styles, H Styles, Body Text Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+/* Fonts */
+body, h1, h2, h3, h4, h5, h6, p, a, ul {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+p, a, ul, ol {
+
+}
+ul li, ol li {
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    @media screen and (max-width: $screen-xs) {
+        font-size:16px;
+    }
+}
+dl, blockquote, img {
+
+}
+
+a {
+    text-decoration:none;
+    -webkit-transition:$trans;
+    transition:$trans;
+    &:hover {
+        color:$drk-blu;
+        text-decoration:none;
+    }
+}
+
+.btn {
+    display:inline-block;
+    padding:15px 40px;
+    // background-color:$lt-red;
+    text-decoration:none;
+    // color:$white;
+    // border:2px solid $lt-red;
+    transition:$trans;
+    &:hover {
+        // background-color:$dk-red;
+    }
+}
+
+p {
+    font-size:22px;
+    line-height: 36px;
+    margin-bottom:30px;
+}

@@ -1,0 +1,783 @@
+/**
+ * Template Front Page Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+
+
+
+
+#front-page {
+    background-color: $dee-e;
+
+}
+
+
+#front-page-cta {
+    @include cta-back;
+    padding: 1px 0;
+    height: 1150px;
+    background-position: top right;
+
+    @media only screen and (max-width: $screen-lg) {
+        height: 1000px;
+        background-color:$drk-blu
+    }
+
+    @media only screen and (max-width: $screen-md) {
+        height: 800px;
+        background-position: top center;
+
+    }
+
+
+    @media only screen and (max-width: $screen-sm) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+        height: auto;
+        background-position:top  100px center;
+        background-size:contain;
+    }
+
+    
+    .container {
+        position: relative;
+        padding-top: 220px;
+
+        @media only screen and (max-width: $screen-md) {
+            padding-bottom: 200px;
+        }
+
+        @media only screen and (max-width: $screen-sm) {
+            background-image: linear-gradient(transparent 28%, $drk-blu 70%);
+            padding-top: 260px;
+            height: 100%;
+            padding-bottom:150px;
+        }
+
+
+        h1 {
+            @include merri-header;
+            color: $white;
+            margin: 0;
+            font-size:39px;
+            @media only screen and (max-width: $screen-lg) {
+                font-size:29px !important;
+            }
+            @media only screen and (max-width: $screen-md) {
+                font-size:24px !important;
+            }
+
+        }
+
+        p.sub-title {
+            @include oz-header;
+            max-width: 700px;
+            line-height: 120%;
+            margin-top: 0;
+            @media only screen and (max-width: $screen-lg) {
+                font-size:60px !important;
+            }
+
+            @media only screen and (max-width: $screen-sm) {
+                max-width: 400px;
+                font-size:50px !important;
+            }
+        }
+
+        .btn {
+            width: 400px;
+            color: $yell;
+            font-size:24px;
+            margin: 0;
+
+            &:hover {
+                color: $drk-blu;
+            }
+
+            @media only screen and (max-width: $screen-md) {
+                font-size:16px;
+                padding: 15px 20px;
+                width: 90%;
+                max-width:250px;
+            }
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width:370px;
+            justify-items: start;
+            margin-top:50px;
+
+            @media only screen and (max-width: $screen-md) {
+                max-width: 300px;
+            }
+            @media only screen and (max-width: $screen-sm) {
+                padding-left:0;
+                padding-right:0;
+            }
+            @media only screen and (max-width: $screen-xxs) {
+                margin: 30px auto 0;
+            }
+
+            img {
+                height: 140px;
+
+                @media only screen and (max-width: $screen-md) {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.page-id-1540 {
+    #front-page-cta {
+        background-position: top right !important;
+    }
+}
+
+.home-promise {
+    padding: 0;
+    position: relative;
+    top: 1px;
+    .promise-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position:relative;
+
+        @media only screen and (max-width: $screen-md) {
+            grid-template-columns: 1fr;
+        }
+
+        .home-skinner-image {
+            img {
+                max-height: 1135px;
+                position: absolute;
+                bottom: 0px;
+                left: -100px;
+                @media only screen and (max-width: 1300px) {
+                    max-height: 1045px;
+                }
+
+                @media only screen and (max-width: $screen-lg) {
+                    left: -200px;
+                }
+
+                @media only screen and (max-width: $screen-md) {
+                    position: relative;
+                    bottom: 100px;
+                    left: auto;
+                }
+
+            }
+
+            @media only screen and (max-width: $screen-md) {
+                max-height: 400px;
+            }
+
+            @media only screen and (max-width: $screen-xs) {
+                max-height: 200px;
+            }
+
+            @media only screen and (max-width: $screen-xxxs) {
+                max-height: 100px;
+            }
+        }
+    }
+}
+
+.home-skinner-video {
+    p {
+        max-width: 690px;
+    }
+
+    .promise-title {
+        @include merri-header;
+    }
+
+    .home-promise-video {
+        padding-bottom: 100px;
+        
+        .lightbox-play {
+            position: relative;
+            height: 350px;
+            width: 100%;
+            background-size: cover;
+            margin-top: 100px;
+            @media only screen and (max-width: $screen-xl) {
+                height: 250px;
+                margin-top: 50px;
+                padding-bottom: 50px;
+            }
+            @media only screen and (max-width: $screen-sm) {
+                margin-left:-20px;
+                margin-right:-20px;
+                width:112%;
+            }
+
+            &:after {
+                content: '\e910';
+                font-family: $icomoon;
+                position: absolute;
+                left: 50%;
+                margin-left: -40px;
+                top: 50%;
+                margin-top: -40px;
+                font-size: 5em;
+                color: $white;
+            }
+
+            a.bold {
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                position: relative;
+            }
+
+
+        }
+
+        @media only screen and (max-width: $screen-md) {
+            padding-bottom:0;
+        }
+    }
+
+    @media only screen and (max-width: $screen-md) {
+        background-color: $dee-e;
+        z-index: 2;
+        padding: 30px 0;
+    }
+    @media only screen and (max-width: $screen-sm) {
+       padding-bottom:0;
+    }
+}
+
+.home-law-firm-section {
+    background-color: $drk-blu;
+    padding:110px 0;
+    @media only screen and (max-width: $screen-sm) {
+       padding:60px 0 40px 0;
+    }
+    h2 {
+        color: $yell;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 80px;
+        @media only screen and (max-width: $screen-sm) {
+            margin-bottom:40px;
+        }
+    }
+}
+
+.home-law-firm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+
+    @media only screen and (max-width: $screen-md) {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    div {
+        h3 {
+            @include merri-header;
+            color: $white;
+            font-size: 35px;
+        }
+
+        p {
+            color: $white;
+            margin: 0;
+            a {
+                color: $yell;
+                text-decoration: underline;
+                font-family: $merri;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        @media only screen and (max-width: $screen-sm) {
+            padding-bottom:40px;
+        }
+    }
+}
+
+
+.home-criminal-def {
+    background-color: $dee-e;
+    .container {
+        max-width:940px;
+
+        h2 {
+            @include merri-header;
+            color: $text-blk;
+            max-width:550px;
+            text-align:center;
+            margin:0 auto 35px;
+        }
+
+    
+        div.blue-text { 
+            margin:35px 0;
+            p {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.home-cases {
+    background-image: url(/wp-content/uploads/2019/11/homepage-cases-we-handle-dui-defense-img.jpg);
+    padding: 170px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $screen-lg) {
+        background-position: center;
+        padding: 80px 0;
+    }
+
+    @media only screen and (max-width: $screen-xs) {
+        background-position: center;
+        padding: 40px 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        @media only screen and (max-width: $screen-md) {
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+        }
+    }
+}
+
+.cases-sidebar {
+    @media only screen and (max-width: $screen-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .btn {
+        background-color: transparent;
+        display: inline-block;
+        max-width:100%;
+        text-align: left;
+        box-shadow: none;
+
+        @media only screen and (max-width: $screen-md) {
+            text-align: left;
+            padding: 15px;
+        }
+        &:hover {
+            background-color: $blue;
+            color:white;
+        }
+    }
+    .btn.btn-effects {
+        background-color: $blue;
+    }
+
+    h3 {
+        color: $white;
+        text-align:left;
+        @media only screen and (max-width: $screen-md) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+
+.cases-info {
+    @media only screen and (max-width: $screen-md) {
+        max-width: 500px;
+        margin:0 auto;
+    }
+    .targetDiv {
+        display: none;
+
+        &:first-child {
+            display: block;
+        }
+
+        .section-name-header {
+            font-style: italic;
+        }
+    }
+
+    h4 {
+        color: $white;
+        font-family: $merri;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        @media only screen and (max-width: $screen-xs) {
+            text-align:center;
+        }
+    }
+
+    p {
+        color:$white;
+        margin-bottom:30px;
+        max-width: 630px;
+    }
+
+    a {
+        @media only screen and (max-width: $screen-xs) {
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.home-crime-accused {
+    background-color: $drk-blu;
+    padding:200px 0;
+
+    @media only screen and (max-width: $screen-lg) {
+        padding: 80px 0;
+    }
+    @media only screen and (max-width: $screen-sm) {
+        padding: 40px 0;
+    }
+    .container {
+        .accused-top {
+            text-align: center;
+            h2 {
+                @include merri-header;
+                color: $yell;
+            }
+
+            p {
+                color: $dee-e;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.accused-accordions {
+    background-color:$dee-e; 
+    margin:60px 0;
+    .accused-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        p {
+            @include merri-header;
+            text-align:center;
+            margin: 0;
+            padding: 30px 0;
+            position:relative;
+            cursor: pointer;
+            @media screen and (max-width: $screen-sm) {
+                font-size: 18px;
+            }
+
+        }
+
+        p.active-accused {
+            &:after {
+                content:'';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 30px 30px 30px;
+                border-color: transparent transparent $drk-blu transparent;
+                bottom: 0;
+                position: absolute;
+                left: 50%;
+                margin-left: -25px;
+            }
+        }
+    }
+}
+
+.common-legal-container {
+    display: none;
+}
+
+.accused-container-show {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+
+    .accordions {
+        padding-left: 70px;
+
+        .acc-container {
+            position:relative;
+            padding-top: 40px;
+            &:after {
+                content: '';
+                width: 1px;
+                position: absolute;
+                height: calc(100% + 45px);
+                background-color: $dee-e;
+                left: -33px;
+                bottom: -105px;
+                @media screen and (max-width: $screen-lg) {
+                    bottom: -100px;
+                }
+            }
+
+
+            &:first-child {
+                &:after {
+                    content: '';
+                    @media screen and (max-width: $screen-lg) {
+                        height: 100%;
+                        bottom: -50px;
+                    }
+                }
+            }
+
+
+            &:last-child {
+                &:after {
+                    content: '';
+                    background-color: $drk-blu;
+                }
+            }
+        }
+        .accordions_title {
+            
+            position: relative;
+            h4 {
+                @include merri-header;
+                color: $white;
+                cursor: pointer;
+                margin:0;
+
+                &:hover {
+                    color: $yell;
+                }
+
+                @media screen and (max-width: $screen-sm) {
+                    font-size: 18px;
+                    position:relative;
+                    top:-15px;
+                }
+            }
+
+            &:before {
+                font-family: $icomoon;
+                content: '\e914';
+                margin: 0 30px 0 -40px;
+                color: $white;
+                vertical-align: top;
+                position: absolute;
+                bottom: 12px;
+                font-size: 1.5em;
+                left: -6px;
+                z-index:9;
+            }
+
+
+
+
+        }
+
+        .accordions_title.active {
+            h4 {
+                color: $yell;
+            }
+
+            &:before {
+                color: $yell;
+            }
+
+            &:after {
+                content: '';
+                margin: 0 30px 0 -40px;
+                vertical-align: top;
+                position: absolute;
+                bottom: 7px;
+                font-size: 1.5em;
+                left: -11px;
+                z-index: 9;
+                border: 1px solid $yell;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+
+        }
+
+        .accordions_content {
+            display: none;
+
+            p {
+                color: $white;
+            }
+
+            a {
+                @include btn;
+                display:inline-block;
+                max-width:400px;
+            }
+        }
+    }
+}
+
+.home-skinner-side-container {
+    padding:0;
+    background-color: $drk-blu;
+    position: relative;
+
+
+    &:before {
+        content: '';
+        background-image: url(/wp-content/uploads/2019/12/homepage-gold-badge-img.png);
+        position: absolute;
+        top: 120px;
+        height: 126px;
+        width: 126px;
+        /* bottom: 0; */
+        position: absolute;
+        left: 50%;
+        margin-left: -70px;
+        background-size: cover;
+        z-index: 9;
+        @media only screen and (max-width: $screen-lg) {
+            top: -10px;
+        }
+    }
+}
+
+.home-skinner-side {
+    background-image: url(/wp-content/uploads/2019/11/homepage-mike-is-on-your-side-bg-img-1024x796-1.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position:Relative;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 28%);
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 28%);
+
+    @media only screen and (max-width: $screen-lg) {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+        -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+        padding-bottom: 0;
+    }
+    @media only screen and (max-width: $screen-xs) {
+        background-position:top right -450px;
+    }
+    
+
+    .container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        height: 800px;
+        grid-template-rows: 1fr 45% 1fr;
+        padding-top: 300px;
+
+        @media only screen and (max-width: $screen-lg) {
+            padding-top: 0;
+        }
+        h3 {
+            align-self: end;
+            max-width:390px;
+            text-align: center;
+            margin:0;
+        }
+
+        p {
+            max-width: 500px;
+            color: $drk-blu;
+        }
+
+        a {
+            align-self: start;
+        }
+
+
+    }
+}
+
+.home-results {
+    background-color: $white;
+    .container {
+        max-width: 1200px;
+        .results-slider_header {
+            @include oz-header;
+            color: $drk-blu;
+            text-align:center;
+            margin-bottom:80px;
+            text-transform: uppercase;
+        }
+
+
+        .btn {
+            margin: 60px auto 0;
+            @media only screen and (max-width: $screen-sm) {
+                max-width:180px;
+                margin:0 auto;
+            }
+            
+        }
+
+        .results-case {
+            font-family: $merri;
+            color: $drk-blu;
+            font-weight: $semi-bold;
+            margin: 10px 0 0 0;
+        }
+    }
+}
+
+ul.section-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+
+    @media only screen and (max-width: $screen-lg) {
+        grid-gap: 30px;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        margin:0;
+    }
+
+
+    li {
+        list-style-type: none;
+        width: 475px;
+        margin: 0;
+
+        @media only screen and (max-width: $screen-lg) {
+            width: 370px;
+        }
+
+        @media only screen and (max-width: $screen-md) {
+            width: 100%;
+        }
+
+        .icon-case-results {
+            span {
+                font-size: 6em;
+                margin-bottom: 15px;
+                display: block;
+            }
+        }
+
+        .recent-success-title {
+            @include merri-header;
+        }
+
+        .recent-success-content {
+
+        }
+    }
+}

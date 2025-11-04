@@ -1,0 +1,194 @@
+/**
+ * Theme footer
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+
+
+@mixin oz-header {
+    font-family: $oz;
+    font-size: 82px;
+    font-weight: $normal;
+    color: $white; 
+    text-transform: capitalize; 
+    line-height: 130%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    @media only screen and (max-width: $screen-lg) {
+        font-size: 50px;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+        font-size: 45px;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+        font-size: 35px;
+    }
+
+}
+
+
+
+@mixin merri-header {
+    font-family: $merri;
+    font-size: 45px;
+    font-weight: $normal;
+    color: $drk-blu; 
+    text-transform: capitalize; 
+    font-style: italic;
+    line-height: 130%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: $semi-bold;
+    @media only screen and (max-width: $screen-xl) {
+        font-size: 35px;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+        font-size: 25px;
+    }
+}
+
+
+@mixin paragraph {
+    font-family: $merri;
+    font-size: 20px;
+    font-weight: $normal;
+    color: $text-blk;
+    line-height: 160%;
+    margin: 10px 0 30px 0;
+
+    @media only screen and (max-width: $screen-xl) {
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+        font-size: 16px;
+    }
+}
+
+@mixin btn {
+    font-family: $merri;
+    color: $white;
+    background-color: $blue;
+    font-size: 20px;
+    -webkit-transition: $trans;
+    transition: $trans;
+    padding:20px 25px;
+    display:block;
+    margin: 10px 0;
+    text-transform: uppercase; 
+    transition: $trans;
+    max-width:304px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: $screen-xl) {
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+        font-size: 14px;
+    }
+    
+
+    &:hover {
+        background-color: $yell;
+        color: $blue;    
+        -webkit-transition: $trans;    
+        transition: $trans;
+
+    }
+}
+
+
+@mixin cta-back {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 15%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+
+
+    @media only screen and (max-width: $screen-sm) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+    }
+}
+
+@mixin classy {
+    background-color:$dee-e;
+    h2 {
+        @include merri-header;
+        text-align:center;
+    }
+
+    p {
+        max-width: 800px;
+        margin:10px auto 30px auto;
+    }
+}
+
+
+@mixin accordion {
+    .traditional-accordions-container {
+        max-width: 980px;
+        margin: 0 auto;
+        border-bottom: 2px solid $dee-e;
+        padding: 20px 0;
+
+        .accordions_title {
+            display: grid;
+            grid-template-columns: 1fr 50px;
+            cursor: pointer;
+            span {
+                &:after {
+                    content: "+";
+                    display: inline-block;
+                    transition: .3s;
+                    font-size: 16px;
+                    position: relative;
+                    color: $dee-e;
+                    margin-left: 5px;
+                    font-size: 3em;
+                    @media screen and (max-width: $screen-sm) {
+                        font-size:2em;
+                    }
+                }
+            }
+
+            h4 {
+                @include merri-header;
+
+                @media screen and (max-width: $screen-sm) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .accordions_title.active {
+
+            h4 {
+                color:$blue;
+            }
+            span {
+                &:after {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                    color: $blue;
+                }
+            }
+        }
+
+        .accordions_content {
+            display: none;
+        }
+
+        &:last-child {
+            border:none;
+        }
+    }
+}

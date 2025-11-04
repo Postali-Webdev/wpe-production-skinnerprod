@@ -1,0 +1,92 @@
+{
+    "key": "group_5dc9ba9d2a273",
+    "title": "Case Results - CPT",
+    "fields": [
+        {
+            "key": "field_5dc9baac5bb47",
+            "label": "Result",
+            "name": "result",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5dcac4c413943",
+            "label": "Icon",
+            "name": "icon",
+            "type": "radio",
+            "instructions": "Select which icon you want to display for this case result",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "assault": "Assault",
+                "sex": "Sex Crime",
+                "dui": "DUI",
+                "traffic": "Traffic",
+                "expungement": "Expungement",
+                "theft": "Theft",
+                "property": "Property",
+                "white": "White Collar"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5de580050cb6f",
+            "label": "Show More",
+            "name": "show_more",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "results"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1575321619
+}

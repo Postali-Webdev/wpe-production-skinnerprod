@@ -1,0 +1,69 @@
+/**
+ * Sass variables and functions.
+ *
+ * @package Postali Child
+ * @author Postali LLC
+ */
+
+// Breakpoints
+$screen-xxl: 1660px;
+$screen-xl: 1400px;
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 667px;
+$screen-xxs: 480px;
+$screen-xxxs: 360px;
+
+// Containers
+$container-max-width: $screen-xxl;
+$container-padding:30px;
+
+// Transitions
+$transition-speed:.3s;
+$transition-fast:.3s ease-in-ease-out;
+$transition-slow:.5s ease-in-ease-out;
+
+// Core Colors
+$blk: #000000;
+$white: #FFFFFF;
+$text-blk: #545454;
+$blue: #2D57A7;
+$dee-e: #D8D8D8;
+$drk-blu: #293F69;
+$yell: #E9D69B;
+
+
+
+// Link Attributes
+// $link-color: $lt-red;
+// $link-hover-color: $grey;
+$link-transition-speed: .15s;
+$trans: 0.3s linear;
+
+// Typography
+//$FONTFAMILY: 'FONTFAMILY', sans-serif;
+$icomoon: 'Icomoon';
+$merri: 'Merriweather', serif;
+$oz: 'Oswald', sans-serif;
+
+// $body-font-family: $overpass;
+// $body-text-color: $dk-blue;
+$body-line-height: 130%;
+
+// Font Weight
+$thin: 100;
+$normal: 400;
+$semi-bold: 600; 
+$bold: 700; 
+$black: 900;
+
+/* Oh Snap! Moile Menu */
+$header-height:80px;
+$height-icon: 25px;
+$width-line: 40px;
+$height-line: 5px;
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;

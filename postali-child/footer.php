@@ -30,6 +30,7 @@
             <div class="words-contact-footer">
                 <div class="footer-nav">
                     <div>
+                        <nav role="navigation">
                         <?php
                             $args = array(
                                 'container' => false,
@@ -37,6 +38,7 @@
                             );
                             wp_nav_menu( $args );
                         ?>
+                        </nav>
                     </div>	
 
                     <div class="social-footer">

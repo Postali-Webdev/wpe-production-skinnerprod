@@ -65,6 +65,7 @@ endif; ?>
 				</div>
 
 				<div id="header-top_menu">
+                    <nav role="navigation">
                     <?php
                         $args = array(
                             'container' => false,
@@ -72,6 +73,7 @@ endif; ?>
                         );
                         wp_nav_menu( $args );
                     ?>			
+                    </nav>
 				</div>
 
                 <div id="header-top_mobile">
